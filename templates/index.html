@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patio de juegos</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        {% for x in range(num) %}
+        <div class="box" style="background-color: {{color}};"></div>
+        {% endfor %}
+
+    </div>
+
+</body>
+
+</html>
